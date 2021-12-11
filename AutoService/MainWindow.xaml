@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AutoService"
         mc:Ignorable="d"
        WindowStartupLocation="CenterScreen"
-       Title="Visitor Menu" Height="485.2" Width="800" MinWidth="450" MinHeight="200" Loaded="Window_Loaded">
+       Title="Visitor Menu" Height="485.2" Width="800" MinWidth="800" MinHeight="400" Loaded="Window_Loaded">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="47"></RowDefinition>
