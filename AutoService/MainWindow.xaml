@@ -10,7 +10,8 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="47"></RowDefinition>
-            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
@@ -29,25 +30,26 @@
             </DockPanel>
             <Border BorderBrush="#FF6995C2" BorderThickness="0.5"></Border>
         </StackPanel>
-        <StackPanel Grid.Row="1" Orientation="Horizontal">
-            <Button x:Name="PageFirst" Content="Page 1" HorizontalAlignment="Left"  Grid.Row="1" Width="75" Margin="0,0,0,1" Click="PageFirst_Click" />
-            <Button x:Name="PageSecond" Content="Page 2" HorizontalAlignment="Left"  Grid.Row="1" VerticalAlignment="Top" Width="75" Click="PageSecond_Click" />
+        <TextBlock Grid.Row="1" TextAlignment="Center" FontSize="16">Клиенты</TextBlock>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <Button x:Name="PageFirst" Content="Page 1" HorizontalAlignment="Left"  Width="75" Margin="0,0,0,1" Click="PageFirst_Click" />
+            <Button x:Name="PageSecond" Content="Page 2" HorizontalAlignment="Left"   Width="75" Click="PageSecond_Click" />
             <ComboBox Width="120" HorizontalAlignment="Right" Name="FilterCmb">
-                <ComboBoxItem Content="Город"/>
+                <ComboBoxItem IsSelected="True"  Content="Город"/>
                 <ComboBoxItem Content="ФИО"/>
                 <ComboBoxItem Content="Дата рождения"/>
             </ComboBox>
             <ComboBox Width="120" HorizontalAlignment="Right" Name="SortCmb">
-                <ComboBoxItem Content="Новосибирск"/>
+                <ComboBoxItem IsSelected="True" Content="Новосибирск"/>
                 <ComboBoxItem Content="Красноярск"/>
                 <ComboBoxItem Content="Мурманск"/>
             </ComboBox>
         </StackPanel>
         
-        <Frame x:Name="FrameTable" Grid.Row ="2" >
+        <Frame x:Name="FrameTable" Grid.Row ="3" >
 
         </Frame>
-        <TextBlock Grid.Row="2" Background="#FFFF9C1A" TextAlignment="Center" FontFamily="Microsoft Sanf Serif" Padding="5" Foreground="Black" VerticalAlignment="Bottom" Text="The best company 2021 years!" RenderTransformOrigin="0.5,0.5"></TextBlock>
+        <TextBlock Grid.Row="4" Background="#FFFF9C1A" TextAlignment="Center" FontFamily="Microsoft Sanf Serif" Padding="5" Foreground="Black" VerticalAlignment="Bottom" Text="The best company 2021 years!" RenderTransformOrigin="0.5,0.5"></TextBlock>
         
 
 
